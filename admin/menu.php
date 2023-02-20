@@ -13,10 +13,8 @@ session_start();
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-        </div>
         <div class="info">
-          <a href="index.php" class="d-block">คุณ <?php echo $_SESSION["u_name"];?></a>
+          <a href="index.php" class="d-block ">คุณ <?php echo $_SESSION["u_name"];?></a>
         </div>
       </div>
 
@@ -51,13 +49,7 @@ session_start();
               <p>จัดการข้อมูลสถานะ</p>
             </a>
           </li>  
-          <li class="nav-item">
-            <a href="status.php" class="nav-link <?php if($menu=="status.php"){echo "active";} ?> ">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>จัดการข้อมูลสถานะ</p>
-            </a>
-          </li>  
- 
+
  
           <li class="nav-item">
             <a href="#" class="nav-link <?php if($menu=="#"){echo "active";} ?> ">
