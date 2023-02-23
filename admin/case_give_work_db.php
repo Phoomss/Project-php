@@ -15,8 +15,6 @@
         $result = mysqli_query($con, $sql) or die ("Error in query: $sql" .mysqli_error());
         mysqli_close($con);
 
-        echo '<script type="text/javascript">
-        swal("", "ทำรายการสำเร็จ !!", "success");
-        </script>';
+
        header("Location: index.php")
 ?>

@@ -14,13 +14,5 @@
         $result = mysqli_query($con, $sql) or die ("Error in query: $sql" .mysqli_error());
         mysqli_close($con);
 
-        if($result){
-            echo '<script>';
-            echo "window.location = 'case_success.php?do=success';";
-            echo '<script>';
-        }else{
-            echo '<script>';
-            echo "window.location = 'case_success.php?act=add&do=f';";
-            echo '<script>';
-        }
+        header("Location: case_success.php")
 ?>
