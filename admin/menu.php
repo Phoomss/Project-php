@@ -49,6 +49,12 @@ session_start();
               <p>จัดการข้อมูลสถานะ</p>
             </a>
           </li>  
+          <li class="nav-item">
+            <a href="tbl_worker.php" class="nav-link <?php if($menu=="tbl_worker.php"){echo "active";} ?> ">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>ดูตารางงานการซ่อม</p>
+            </a>
+          </li>  
 
  
           <li class="nav-item">

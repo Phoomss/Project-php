@@ -15,13 +15,8 @@
         $result = mysqli_query($con, $sql) or die ("Error in query: $sql" .mysqli_error());
         mysqli_close($con);
 
-        if($result){
-            echo '<script>';
-            echo "window.location = 'index.php?do=success';";
-            echo '<script>';
-        }else{
-            echo '<script>';
-            echo "window.location = 'index.php?act=add&do=f';";
-            echo '<script>';
-        }
+        echo '<script type="text/javascript">
+        swal("", "ทำรายการสำเร็จ !!", "success");
+        </script>';
+       header("Location: index.php")
 ?>
